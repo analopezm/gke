@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: gcr.io/$PROJECT_ID/<preffered_image_name>:latest
+        image: gcr.io/$PROJECT_ID/nginxdemo:latest
         ports:
         - containerPort: 80
 ---
