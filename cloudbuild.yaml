@@ -19,7 +19,7 @@ steps:
   id: Push
   args:
   - 'push'
-  - 'gcr.io/$PROJECT_ID/<preffered_image_name>:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/nginxdemo:$SHORT_SHA'
 
 # This step generates the new manifest
 - name: 'gcr.io/cloud-builders/gcloud'
