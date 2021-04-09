@@ -37,5 +37,5 @@ steps:
   id: Deploy
   args: ['apply' , '-f' , 'deployment.yaml']
   env:
-  - 'CLOUDSDK_COMPUTE_ZONE=us-central1-f'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=cloud-ops-sandbox'
+  - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=demo-cluster-gke-regional'
