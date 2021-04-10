@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: gcr.io/cloud-ops-sandbox-3314449137/nginxdemo:latest
+        image: gcr.io/analopezm-demo/nginxdemo:latest
         ports:
         - containerPort: 80
 ---
