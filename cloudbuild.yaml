@@ -38,4 +38,4 @@ steps:
   args: ['apply' , '-f' , 'deployment.yaml']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=demo-cluster-gke-regional'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=buque-cluster'
