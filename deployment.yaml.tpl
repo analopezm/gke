@@ -4,15 +4,18 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
+    version: v1
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: nginx
+      version: v1
   template:
     metadata:
       labels:
         app: nginx
+        version: v1
     spec:
       containers:
       - name: nginx
