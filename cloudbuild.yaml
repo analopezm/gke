@@ -39,15 +39,5 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=buque-cluster'
-- name: 'gcr.io/cloud-builders/kubectl'
-  id: Deploy
-  args: ['apply' , '-f' , 'deployment.yaml']
-  env:
-  - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=navantia-cluster'
-- name: 'gcr.io/cloud-builders/kubectl'
-  id: Deploy
-  args: ['apply' , '-f' , 'deployment.yaml']
-  env:
-  - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=min-defensa-cluster'
