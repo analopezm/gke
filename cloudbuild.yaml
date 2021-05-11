@@ -40,14 +40,14 @@ steps:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=buque-cluster'
 - name: 'gcr.io/cloud-builders/kubectl'
-  id: Deploy-navantia
+  id: Deploy-processing-cluster
   args: ['apply' , '-f' , 'deployment.yaml']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=navantia-cluster'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=anthos-sample-cluster1'
 - name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy-min-defensa
   args: ['apply' , '-f' , 'deployment.yaml']
   env:
-  - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=min-defensa-cluster'
+  - 'CLOUDSDK_COMPUTE_ZONE=registered'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=azure-cluster'
