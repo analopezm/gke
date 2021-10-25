@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: gcr.io/analopezm-demo/nginxdemo:latest
+        image: gcr.io/analopezm-anthos17-demo/nginxdemo:latest
         ports:
         - containerPort: 80
 ---
