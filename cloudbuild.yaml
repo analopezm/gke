@@ -34,12 +34,6 @@ steps:
 # This step deploys the new version of our container image
 # in the Kubernetes Engine clusters.
 - name: 'gcr.io/cloud-builders/kubectl'
-  id: Deploy-buque
-  args: ['apply' , '-f' , 'deployment.yaml']
-  env:
-  - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=buque-cluster'
-- name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy-processing-cluster
   args: ['apply' , '-f' , 'deployment.yaml']
   env:
